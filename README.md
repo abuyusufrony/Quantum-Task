@@ -1,13 +1,52 @@
-# React + Vite
+# Job Listings React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React.js application that fetches and displays job listings from an external API with clean UI and seamless user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Live Demo
 
-## Expanding the ESLint configuration
+[View Live Site](https://painstaking-acoustics.surge.sh/)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Quantum-Task
+---
+
+## 📸 Screenshots
+
+<!-- Replace with your actual screenshot images -->
+
+![Home Page](/src/assets/nav.png)  
+*Nav page showing job listings*
+
+![Card](/src/assets/card.png)  
+*Example job card with details*
+
+![Footer Details](/src/assets/footer.png)  
+*Example Footer with details*
+
+![Login Details](/src/assets/singin.png)  
+*Example Login with details*
+---
+
+## 🛠️ Features
+
+- Fetches job data from a REST API
+- Displays jobs with details like title, budget, skills, and date
+- Responsive grid layout with hover effects
+- Loading and error states handling
+- Clean and modern UI using Tailwind CSS
+
+---
+
+## 🚀 Technologies Used
+
+- React.js (Functional Components & Hooks)
+- Tailwind CSS for styling
+- Fetch API for data retrieval
+- React Icns
+
+- Surge for deployment
+
+---
+
+## 📁 Project Structure
+
