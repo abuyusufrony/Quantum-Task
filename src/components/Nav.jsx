@@ -4,6 +4,7 @@ import bgGlow from '../assets/Ellipse 5.png';
 import { Link, useLocation } from 'react-router';
 import { FiSearch, FiChevronDown } from "react-icons/fi"
 import box from '../assets/bx_category.png'
+import star from '../assets/Star 2.png'
 
 const Nav = () => {
 
@@ -46,7 +47,7 @@ const Nav = () => {
                         BECAME A SELLER
                     </a>
                     <Link to={'/signin'} className="text-sm hover:underline">LOGIN</Link>
-                    <button className="bg-green-500 text-black px-4 py-1 rounded-full text-sm hover:bg-green-400 whitespace-nowrap">
+                    <button className="bg-green-500 text-white px-4 py-1 rounded-full text-sm hover:bg-green-400 whitespace-nowrap">
                         <Link to={'/signup'}> Registration</Link>
                     </button>
                 </div>
@@ -96,9 +97,12 @@ const Nav = () => {
                         </button>
                     </div>
 
-                    <button className="bg-green-500 text-black px-4 py-2 rounded-full text-sm hover:bg-green-400">
+                    <button className="bg-green-500 text-white px-4 p-3.5 py-2 rounded-full text-sm font-semibold hover:bg-green-400">
                         Advanced search
                     </button>
+                    <div>
+                        <img className='ml-64' src={star} alt="" />
+                    </div>
                 </div>
             )}
 
