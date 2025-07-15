@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from './Nav';
+import { Outlet } from 'react-router';
 
 const Home = () => {
     return (
@@ -7,6 +8,8 @@ const Home = () => {
             this are Home
 
             <Nav></Nav>
+            <Outlet></Outlet>
+
         </div>
     );
 };

@@ -4,7 +4,7 @@ import bgGlow from '../assets/Ellipse 5.png';
 
 const Nav = () => {
     return (
-        <div className="relative bg-[#071400] text-white h-[336px] overflow-hidden">
+        <div className="relative bg-[#071400] text-white h-[236px] overflow-hidden">
             {/* Background Glow */}
             <img
                 src={bgGlow}
@@ -42,14 +42,14 @@ const Nav = () => {
                     </button>
                 </div>
             </div>
-            <div className="absolute top-[80px] left-[260px] w-[1400px] h-[2px]  bg-white/6 rounded-[8px]"></div>
+            <div className="absolute top-[80px] left-[150px] w-[1400px] h-[2px]  bg-white/6 rounded-[8px]"></div>
 
 
 
 
 
             {/* Search Section */}
-            <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center gap-4 px-4 lg:px-6 mt-4 lg:mt-10 lg:ml-56">
+            <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center gap-4 px-4 lg:px-6 mt-4 lg:mt-10 lg:ml-32">
                 <div className="flex flex-col sm:flex-row items-stretch sm:items-center bg-[#1a1f16] rounded-md overflow-hidden w-full max-w-lg">
                     <input
                         type="text"
