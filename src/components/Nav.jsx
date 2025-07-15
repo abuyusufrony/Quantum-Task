@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../assets/image 2.png';
 import bgGlow from '../assets/Ellipse 5.png';
+import { Link } from 'react-router';
 
 const Nav = () => {
     return (
@@ -36,9 +37,9 @@ const Nav = () => {
                     <a href="#" className="text-green-500 text-sm font-medium hover:underline">
                         BECAME A SELLER
                     </a>
-                    <a href="#" className="text-sm hover:underline">LOGIN</a>
+                    <Link to={'/signin'} className="text-sm hover:underline">LOGIN</Link>
                     <button className="bg-green-500 text-black px-4 py-1 rounded-full text-sm hover:bg-green-400 whitespace-nowrap">
-                        Registration
+                        <Link to={'/signup'}> Registration</Link>
                     </button>
                 </div>
             </div>
