@@ -7,7 +7,6 @@ import {
     FaXTwitter,
     FaEnvelope,
     FaLock,
-
 } from "react-icons/fa6";
 import hero from "../assets/hero.jpeg";
 import { Link } from "react-router";
@@ -26,21 +25,21 @@ const Signup = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center p-4">
-            <div className="w-full max-w-6xl rounded-3xl overflow-hidden shadow-2xl flex bg-black relative">
+            <div className="w-full max-w-6xl rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row bg-black relative">
                 {/* Close Button */}
                 <button className="absolute top-4 right-4 bg-green-700 hover:bg-green-600 text-white rounded-full p-2 z-20">
-
+                    ✕
                 </button>
 
-                {/* Left Side */}
-                <div className="w-1/2 flex flex-col justify-center items-center px-10 py-12 bg-gradient-to-br from-black to-green-900 text-white">
+                {/* Left Side (Form) */}
+                <div className="w-full md:w-1/2 order-2 md:order-1 flex flex-col justify-center items-center px-6 md:px-10 py-10 md:py-12 bg-gradient-to-br from-black to-green-900 text-white">
                     <div className="w-full max-w-md z-10">
                         {/* Header */}
                         <div className="text-center mb-8">
                             <h2 className="text-3xl font-bold mb-2">Open your account</h2>
                             <p className="text-green-300 text-sm">
                                 Already have an account?{" "}
-                                <Link to={'/signin'} className="underline text-green-400 hover:text-green-300">
+                                <Link to="/signin" className="underline text-green-400 hover:text-green-300">
                                     Sign in
                                 </Link>
                             </p>
@@ -146,7 +145,7 @@ const Signup = () => {
                 </div>
 
                 {/* Right Side - Hero Image */}
-                <div className="w-1/2 relative">
+                <div className="w-full md:w-1/2 order-1 md:order-2 relative h-64 md:h-auto">
                     <img
                         src={hero}
                         alt="Team working together"

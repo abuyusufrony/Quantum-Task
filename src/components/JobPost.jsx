@@ -1,4 +1,4 @@
-"use client";
+
 
 import { useEffect, useState } from "react";
 
@@ -35,7 +35,7 @@ const JobPost = () => {
         fetchJobs();
     }, []);
 
-    if (loading) return <div>Loading...</div>;
+    if (loading) return <div className="flex justify-center items-center text-4xl font-bold p-10 bg-fuchsia-600 text-white">Loading...</div>;
     if (error) return <div>Error: {error}</div>;
 
     return (
@@ -121,7 +121,7 @@ const JobPost = () => {
 
                         {/* Posted By */}
                         <p className="text-gray-400 text-sm mb-6">
-                            Posted by <span className="text-gray-900 font-medium">Eamman Olio</span>
+                            Posted by <span className="text-gray-900 font-medium">Rony</span>
                         </p>
 
                         {/* Apply Button */}

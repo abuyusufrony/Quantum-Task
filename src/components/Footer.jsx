@@ -1,11 +1,12 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import hand from '../assets/hand.jpeg'
+import logo from '../assets/image 2.png'
 
 
 const Footer = () => {
     return (
         <div>
-            <h2>this page are show footer </h2>
 
 
             <div className="bg-[#0a1a0a] text-white">
@@ -15,14 +16,14 @@ const Footer = () => {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
                             {/* Left side - Heading */}
                             <div>
-                                <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
-                                    Reach Your Requirement Goals Right on Schedule
+                                <h1 className="text-xl lg:text-3xl font-bold leading-tight">
+                                    Reach Your Requirement Goals Right on <br /> Schedule
                                 </h1>
                             </div>
 
                             {/* Right side - Description and button */}
                             <div className="flex flex-col justify-center">
-                                <p className="text-gray-300 text-lg mb-8 leading-relaxed">
+                                <p className="text-gray-300  mb-8 leading-relaxed">
                                     Sign up, complete your profile, and start browsing projects. Submit proposals and communicate with
                                     clients to get hired.
                                 </p>
@@ -38,7 +39,7 @@ const Footer = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                             {/* Logo */}
                             <div className="lg:col-span-1">
-                                <div className="flex items-center gap-3 mb-8">
+                                {/* <div className="flex items-center gap-3 mb-8">
                                     <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
                                         <div className="w-6 h-6 border-2 border-white rounded-full"></div>
                                     </div>
@@ -47,7 +48,9 @@ const Footer = () => {
                                         <div className="text-white font-bold text-lg">SOFTWARE</div>
                                     </div>
                                     <div className="w-8 h-4 bg-green-500"></div>
-                                </div>
+                                </div> */}
+
+                                <img src={logo} alt="" />
                             </div>
 
                             {/* About */}
@@ -84,59 +87,84 @@ const Footer = () => {
                         </div>
 
                         {/* Popular Posts Section */}
-                        <div className="mb-12">
-                            <h3 className="text-white font-semibold text-lg mb-6">Our Popular Post</h3>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                {/* Post 1 */}
-                                <div className="flex gap-4">
-                                    <div className="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
-                                        <img
-                                            src="/placeholder.svg?height=64&width=64"
-                                            alt="Handshake"
-                                            className="w-full h-full object-cover"
-                                        />
-                                    </div>
-                                    <div>
-                                        <p className="text-gray-400 text-sm mb-1">November 7, 2024</p>
-                                        <h4 className="text-white font-medium leading-tight">Unveils the Best Canadian Cities for Biking</h4>
-                                    </div>
-                                </div>
+                        <div className='flex justify-between items-center mb-12'>
 
-                                {/* Post 2 */}
-                                <div className="flex gap-4">
-                                    <div className="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
-                                        <img
-                                            src="/placeholder.svg?height=64&width=64"
-                                            alt="Handshake"
-                                            className="w-full h-full object-cover"
-                                        />
+                            <div className="relative w-fit h-fit">
+                                {/* Glowing Gradient Background */}
+                                <div className="absolute -top-8 -left-8 w-[240px] h-[200px] rounded-full bg-gradient-to-br from-green-500 via-green-400 to-transparent blur-2xl opacity-30 z-0"></div>
+
+                                {/* Social Icons */}
+                                <div className="relative z-10 flex gap-4 pt-8 border-t border-gray-700">
+                                    <a href="#" className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                                        <FaFacebookF className="w-5 h-5 text-white" />
+                                    </a>
+                                    <a href="#" className="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors">
+                                        <FaInstagram className="w-5 h-5 text-white" />
+                                    </a>
+                                    <a href="#" className="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors">
+                                        <FaTwitter className="w-5 h-5 text-white" />
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div className="mb-12">
+                                <h3 className="text-white font-semibold text-lg mb-6">Our Popular Post</h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2">
+                                    {/* Post 1 */}
+                                    <div className="flex">
+                                        <div className=" p-2.5 overflow-hidden flex-shrink-0">
+                                            <img
+                                                src={hand}
+                                                alt="Handshake"
+                                                className=" object-cover h-[72px] w-[110px] rounded-md"
+                                            />
+                                        </div>
+                                        <div>
+                                            <p className="text-gray-400 text-sm mb-1">November 7, 2024</p>
+                                            <h4 className="text-white font-semibold   leading-tight">Unveils the Best Canadian <br /> Cities for Biking</h4>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <p className="text-gray-400 text-sm mb-1">November 7, 2024</p>
-                                        <h4 className="text-white font-medium leading-tight">Unveils the Best Canadian Cities for Biking</h4>
+
+                                    {/* Post 2 */}
+                                    <div className="flex ">
+                                        <div className=" p-2.5 overflow-hidden flex-shrink-0">
+                                            <img
+                                                src={hand}
+                                                alt="Handshake"
+                                                className=" object-cover h-[72px] w-[110px] rounded-md"
+                                            />
+                                        </div>
+                                        <div>
+                                            <p className="text-gray-400 text-sm mb-1">November 7, 2024</p>
+                                            <h4 className="text-white font-semibold leading-tight">Unveils the Best Canadian <br /> Cities for Biking</h4>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        {/* Social icons and copyright */}
-                        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-700">
-                            <div className="flex gap-4 mb-4 md:mb-0">
-                                <a href="#" className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
-                                    <FaFacebookF className="w-5 h-5 text-white" />
-                                </a>
-                                <a href="#" className="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors">
-                                    <FaInstagram className="w-5 h-5 text-white" />
-                                </a>
-                                <a href="#" className="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors">
-                                    <FaTwitter className="w-5 h-5 text-white" />
-                                </a>
-                            </div>
+                            {/* Social icons and copyright */}
+                            {/* <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-700">
+                                <div className="flex gap-4 mb-4 md:mb-0">
+                                    <a href="#" className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                                        <FaFacebookF className="w-5 h-5 text-white" />
+                                    </a>
+                                    <a href="#" className="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors">
+                                        <FaInstagram className="w-5 h-5 text-white" />
+                                    </a>
+                                    <a href="#" className="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center hover:bg-gray-500 transition-colors">
+                                        <FaTwitter className="w-5 h-5 text-white" />
+                                    </a>
+                                </div>
 
-                            <p className="text-gray-400 text-sm">© QuantumEdge Software INC. 2025. All rights reserved.</p>
+                                
+                            </div> */}
+
                         </div>
                     </div>
+                    <p className="text-gray-400 text-sm text-center">© QuantumEdge Software INC. 2025. All rights reserved.</p>
                 </div>
+
             </div>
         </div>
     );
