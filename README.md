@@ -24,7 +24,7 @@ A responsive React.js application that fetches and displays job listings from an
 *Example Footer with details*
 
 ![Login Details](/src/assets/singin.png)  
-*Example Login with details*
+*Example Create Account with details*
 ---
 
 ## 🛠️ Features
